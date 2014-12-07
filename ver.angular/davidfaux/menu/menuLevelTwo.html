@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                
+                $('.listMenu').hide();
+
+            // fade out on page redirect
+                $('.listMenu a').click(function() {
+                    event.preventDefault();
+
+                    newLocation = this.href;
+
+                    $('#container').fadeOut(1000, redirectPage);
+                });
+
+                function redirectPage() {
+                    window.location = newLocation;
+                }
+
+            });
+
+        </script>
+    </head>
+    <body>
+<!-- column one -->
+            <div class="columns" style="border-color:#5f4a29;">
+                <span class="headerMenu">
+                    classroom
+                </span>
+                <span class="listMenu">
+                    <a href="../">student expectations</a>
+                    <a href="../">media lab visual</a>
+
+                    <span class="subHeaderMenu">
+                        period + courses
+                    </span>
+                    
+                    <a href="../courses/01first.html">one: design i</a>
+                    <a href="../courses/02second.html">two: design i</a>
+                    <a href="../courses/03third.html">three: design i</a>
+                    <a href="../courses/04fourth.html">four: ii, iii, iv</a>
+                    <a href="../courses/05fifth.html">five: prep</a>
+                    <a href="../courses/06sixth.html">six: maint</a>
+                </span>
+            </div>
+                
+<!-- column two -->
+            <div class="columns" style="border-color:#775f3b;">
+                
+                <span class="headerMenu">
+                    student materials
+                </span>
+                
+                <span class="listMenu">
+                    <a href="../">procedures</a>
+                    <a href="../">calibration</a>
+
+                    <span class="subHeaderMenu">
+                        student work
+                    </span>
+                    
+                    <a href="../">websites</a>
+                    <a href="../">drawing renders</a>
+                    <a href="../">kinetic typography</a>
+                    <a href="../">presentations</a>
+                    <a href="../">other</a>
+                </span>
+            </div>
+                
+<!-- column three -->
+            <div class="columns" style="border-color:#826a45;">
+                    
+                    <a href="" class="headerMenu">mr. david faux
+                        <br />
+                        <span style="font-size:9px;color:#e3cfb1;">
+                            (expand menu)
+                        </span>
+                    </a>
+
+                <span class="listMenu">
+                    <a href="../index.html">home</a>
+                    
+                    <span class="subHeaderMenu">
+                        teacher profile
+                    </span>
+                    
+                    <a href="mailto:faux.david@cusd80.com">contact by email</a>
+                    <a href="../">résumé</a>
+                    <a href="../">brief background</a>
+                    <a href="../">favorite picture</a>
+
+                    <span class="subHeaderMenu">
+                        forms
+                    </span>
+                    
+                    <a href="../">evaluation rubrics</a>
+                    <a href="../">course forms</a>
+                </span>
+            </div>
+                
+<!-- column four -->
+            <div class="columns" style="border-color:#977f5b;">
+
+                <span class="headerMenu">
+                    digital supplies
+                </span>
+                
+                <span class="listMenu">
+                    <a href="../">barcode image</a>
+                    <a href="../">fonts classified</a>
+                    <a href="../">ebook guides</a>
+                    <!-- <a href="">add additional menu items here</a> -->
+                </span>
+            </div>
+        
+<!-- column five -->
+            <div id="lastColumn" style="border-color:#a8916e;">
+                <span class="headerMenu">
+                    extra
+                </span>
+                <span class="listMenu">
+                    <a href="../">vendors</a>
+                    <a href="../">scholarships</a>
+                    <a href="../">cusd course catalog</a>
+                    <a href="../"><span class="menuNums">2012-2013</span> handbook</a>
+                    <a href="../">podcasts</a>
+                    <a href="../">reference books</a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href="../" style="margin: 0.8em 0; font-size:1.2em;">site map</a>
+                </span>
+            </div>
+    </body>
+</html>

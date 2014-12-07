@@ -1,0 +1,153 @@
+body
+
+{scrollbar-3dlight-color: #cdd0df; 
+
+scrollbar-arrow-color: #cdd0df; 
+
+scrollbar-darkshadow-color: #cdd0df; 
+
+scrollbar-face-color: #101010; 
+
+scrollbar-highlight-color: #cdd0df; 
+
+scrollbar-shadow-color: #cdd0df; 
+
+scrollbar-track-color: #101010; 
+
+background-attachment: fixed;
+
+background-repeat: no-repeat;
+
+background-color: #101010;
+
+font-family: Century Gothic; 
+
+font-size: 9px;
+
+color: #cdd0df;}
+
+
+#wrapper {
+	width: 800px;
+	height: auto;
+	margin-left: 50%;
+	position: absolute;
+	left: -400px;
+}
+
+
+A:link, A:visited, A:active
+
+{text-decoration:none;
+
+font-wieght: bold;
+
+color:#cdd0df;
+
+height: 1px}
+
+
+
+A:hover
+
+{color:#cdd0df;
+
+text-decoration: none;
+
+height: 1px}
+
+
+
+#thelayout{
+
+	position: absolute;
+
+	left: 0px;
+
+	top: 0px;
+
+	z-index: 0;}
+
+
+
+.link1{
+
+	position: absolute;
+
+	left: 67px;
+
+	top: 48px;
+
+	z-index: 3;}
+
+
+
+.link2{
+
+	position: absolute;
+
+	left: 196px;
+
+	top: 1px;
+
+	z-index: 2;}
+
+
+
+.link3{
+
+	position: absolute;
+
+	left: 335px;
+
+	top: 38px;
+
+	z-index: 5;}
+
+
+
+.link4{
+
+	position: absolute;
+
+	left: 469px;
+
+	top: 19px;
+
+	z-index: 4;}
+
+
+
+.link5{
+
+	position: absolute;
+
+	left: 604px;
+
+	top: 48px;
+
+	z-index: 1;}
+	
+
+
+.heading 
+
+{font-family: Century Gothic; 
+
+font-size: 10px; 
+
+color: #cdd0df; 
+
+background-color: #101010;
+
+background-image: url('http://l1arx.50webs.com/images/Heading.png'); 
+
+background-attachment: fixed;
+
+background-repeat: no-repeat;
+
+text-transform: uppercase;
+
+border: 0px; 
+
+text-align:center}

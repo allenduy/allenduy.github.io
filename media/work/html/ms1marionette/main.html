@@ -1,0 +1,116 @@
+<html>
+
+<head>
+
+	<title>L1aRx's Website</title>
+
+
+
+<link rel="stylesheet" href="Marionette.css" type="text/css">
+
+
+
+<!--
+<script type="text/javascript">
+nereidFadeObjects = new Object();
+nereidFadeTimers = new Object();
+
+function nereidFade(object, destOp, rate, delta){
+
+if (!document.all)
+
+return
+
+    if (object != "[object]"){  //do this so I can take a string too
+        setTimeout("nereidFade("+object+","+destOp+","+rate+","+delta+")",0);
+        return;
+    }
+
+    clearTimeout(nereidFadeTimers[object.sourceIndex]);
+
+    diff = destOp-object.filters.alpha.opacity;
+
+    direction = 1;
+
+    if (object.filters.alpha.opacity > destOp){
+        direction = -1;
+    }
+
+    delta=Math.min(direction*diff,delta);
+    object.filters.alpha.opacity+=direction*delta;
+
+    if (object.filters.alpha.opacity != destOp){
+        nereidFadeObjects[object.sourceIndex]=object;
+        nereidFadeTimers[object.sourceIndex]=setTimeout("nereidFade(nereidFadeObjects["+object.sourceIndex+"],"+destOp+","+rate+","+delta+")",rate);
+    }
+
+}
+</script>
+-->
+
+
+</head>
+
+<body bgcolor=#101010 leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>
+
+<div id="wrapper">
+
+<table width=100% height=100% cellpadding=0 cellspacing=0>
+
+<tr>
+
+
+
+<table id="thelayout" width=800 border=0 cellpadding=0 cellspacing=0>
+
+	<tr>
+
+		<td rowspan=3>
+
+			<img src="images/01.jpg" width="44" height="784"><br /><img src="images/07.jpg" width="44" height="13"></td>
+
+		<td rowspan=2>
+
+			<img src="images/02.jpg" width="213" height="401"><br /><iframe src="navi.html" width=213 height=383 framespacing=0 name=navi frameborder=0 scrolling=auto allowtransparency=true>Sorry, your browser does not support this feature please try downloading another browser. Some you may try are: Avant Browser, Internet Explorer, or Mozilla Firefox.</iframe><br /><img src="images/08.jpg" width="213" height="13"></td>
+
+		<td rowspan=3>
+
+			<img src="images/03.jpg" width="56" height="784"><br /><img src="images/09.jpg" width="56" height="13"></td>
+
+		<td rowspan=2>
+
+			<img src="images/04.jpg" width="221" height="401"><img src="images/05.jpg" width="222" height="401"><br /><iframe src="home.html" width=443 height=383 framespacing=0 name=main frameborder=0 scrolling=auto allowtransparency=true>Sorry, your browser does not support this feature please try downloading another browser. Some you may try are: Avant Browser, Internet Explorer, or Mozilla Firefox.</iframe><br /><img src="images/10.jpg" width="443" height="13"></td>
+
+		<td rowspan=3>
+
+			<img src="images/06.jpg" width="44" height="784"><br /><img src="images/11.jpg" width="44" height="13"></td>
+
+	</tr>
+
+</table>
+
+
+
+</table>
+
+
+
+
+
+<!-- Five links at the top of page -->
+
+<div class="link1" style="float:center;filter:alpha(opacity=40);-moz-opacity:.5;opacity:.5;" onMouseOver="nereidFade(this,80,50,3)" onMouseOut="nereidFade(this,50,50,5)"><a href="#" target="_self" alt="Back to Myspace"><img src="images/link_1.jpg" width="149" height="171" border="0"><br /><center>Myspace Home</center></div>
+
+<div class="link2" style="float:center;filter:alpha(opacity=40);-moz-opacity:.5;opacity:.5;" onMouseOver="nereidFade(this,80,50,3)" onMouseOut="nereidFade(this,50,50,5)"><a href="#" target="_self" alt="Back to Intro Page"><img src="images/link_2.jpg" width="149" height="171" border="0"><br /><center>Home</center></div>
+
+<div class="link3" style="float:center;filter:alpha(opacity=40);-moz-opacity:.5;opacity:.5;" onMouseOver="nereidFade(this,80,50,3)" onMouseOut="nereidFade(this,50,50,5)"><a href="navi.html" target="navi" alt="Links"><img src="images/link_3.jpg" width="149" height="171" border="0"><br /><center>Navi</center></div>
+
+<div class="link4" style="float:center;filter:alpha(opacity=40);-moz-opacity:.5;opacity:.5;" onMouseOver="nereidFade(this,80,50,3)" onMouseOut="nereidFade(this,50,50,5)"><a href="#" target="_self" alt="Links Connected to Myspace"><img src="images/link_4.jpg" width="149" height="171" border="0"><br /><center>Myspace Navi</center></div>
+
+<div class="link5" style="float:center;filter:alpha(opacity=40);-moz-opacity:.5;opacity:.5;" onMouseOver="nereidFade(this,80,50,3)" onMouseOut="nereidFade(this,50,50,5)"><a href="#" target="_self" alt="Other Links"><img src="images/link_5.jpg" width="149" height="171" border="0"><br /><center>Extra</center></div>
+
+</div>
+
+</body>
+
+</html>
