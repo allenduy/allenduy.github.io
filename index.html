@@ -1,67 +1,25 @@
-<!DOCTYPE html><head>
+<!DOCTYPE html>
+<html ng-app="allenduy">
+  <head>
     <meta name="description" content="Allen Nguyen's Personal Website" />
-    <meta name="keywords" content="liar,look,inside,graphic,design,origami,cranes,photography,tumblr" />
+    <meta name="keywords" content="look,inside,me,allen,nguyen,duy" />
     <meta name="author" content="Allen Nguyen" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>A Look Inside</title>
+    <title>allenduy</title>
     <link href="media/base/favicon.ico" rel="shortcut icon" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
 
-<body>
-<div id="container">
-	<div id="title">
-    	<p class="title"><span style="color:#fff;">a look</span> inside.</p>
-	</div>
-    
-	<div id="mainimg"></div>
-    
-	<div id="menu">
-		<a href="index.html"><span class="menu"><span class="mnfl">H</span>OME</span></a><a href="about.html"><span class="menu"><span class="mnfl">A</span>BOUT</span></a><a href="blog.html"><span class="menu"><span class="mnfl">B</span>LOG</span></a><a href="links.html"><span class="menu"><span class="mnfl">L</span>INKS</span></a><a href="contact.html"><span class="menu"><span class="mnfl">C</span>ONTACT</span></a><a href="work.html"><span id="endmenu" class="menu"><span class="mnfl">W</span>ORK</span></a>
-	</div>
-    
-	<div id="content">
-    	<h3 class="conhed">WHAT ARE YOU DOING HERE? GO AWAY. JUST KIDDING.</h3><hr />
-        
-		<div class="columns">
-    		<span class="colhed" style="font-size:24px;">who?</span>
-            <p><img src="media/index/who.png" class="thumbs" alt="who" /><br />
-			Want to know more about me? ABOUT is where you should be.</p>
-		</div>
-		
-        <div class="columns">
-        	<span class="colhed" style="font-size:24px;">what?</span>
-            <p><img src="media/index/what.png" class="thumbs" alt="what" /><br />
-			Have no idea what this is? See what I do in WORK.</p>
-		</div>
-		
-        <div class="columns">
-        	<span class="colhed" style="font-size:24px;">where?</span>
-            <p><img src="media/index/where.png" class="thumbs" alt="where" /><br />
-			Looking for me? Find more information in CONTACT.</p>
-		</div>
-        
-		<div class="columns">
-        	<span class="colhed" style="font-size:24px;">why?</span>
-            <p><img src="media/index/why.png" class="thumbs" alt="why" /><br />
-			Now, now. Enough questions ☺ Just search around.</p>
-        </div><hr />
-    	
-        <p class="quote">
-        	"Every designers' dirty little secret is that they copy other designers' work. 
-        	They see work they like, and they imitate it. 
-            Rather cheekily, they call this <strong>inspiration</strong>." -Aaron Russell
-        </p>
-	</div>
-    
-    <div id="footer">
-    	<img src="media/base/copyright.png" id="copyright" alt="copyright" /><br />
-		<center>photo|image credits • banner|krizology(deviantArt) • home|various Tumblrians(tumblr.) • about|xL1aR(me)</center>
-    </div>
-</div>
-</body>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="css/handlebars-v1.1.2.js"></script>
+  <body>
+    <skull></skull>
+    <div id="view" ng-view></div>
 
-    <script language="javascript" type="text/javascript" src="css/javascript.js"></script>
+    <script type="text/javascript" src="js/angular-1.2.27/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-1.2.27/angular-animate.min.js"></script>
+    <script type="text/javascript" src="js/angular-1.2.27/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script>
+    <script src="Gruntfile.js"></script>
+  </body>
 </html>

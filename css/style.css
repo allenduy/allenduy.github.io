@@ -1,168 +1,80 @@
-/* @import url('http://fonts.googleapis.com/css?family=Open+Sans'); */
-@charset "utf-8";
-/* CSS Document */
-
-body{
-	background: #fff;
-	margin: 0;
-	padding: 0;
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica";
 }
 
-a, a:hover{
-	color: #fff;
-}
+  body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../media/bgimgname.jpg");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0 -200px;
+    margin: 0;
+  }
 
-#container{
-	margin: 0;
-	height: auto;
-	width: 100%;
-	overflow: auto;
-	border: 0;
-	text-align: inherit;
-}
+  #skull {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+  }
 
-#title{
-	font: 70px "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	color: #ffe5c3;
-	height: 107px;
-	background: #733;
-	display: block;
-	overflow: hidden;
-}
+    #skull::before {
+      height: 350px;
+      width: 100%;
+      content: "";
+      display: block;
+    }
 
-p.title{
-	position: relative;
-	left: -300px;
-	padding-top: 34px;
-	margin: 0 0 0 50%;
-	overflow: visible;
-}
+    #menu {
+      height: 50px;
+      width: 100%;
+      color: #FFF;
+      background: #222;
+      text-align: center;
+      font-size: 8pt;
 
-#mainimg{
-	background: url(../media/base/banner.png) repeat-x center;
-	height: 205px;
-	width: 100%;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-}
+      -webkit-box-shadow: 0 0 15px -2px #000;
+      -moz-box-shadow: 0 0 15px -2px #000;
+      -o-box-shadow: 0 0 15px -2px #000;
+      box-shadow: 0 0 15px -2px #000;
+    }
+      #menu img {
+        max-width: 200px;
+        position: relative;
+        top: -25px;
+        left: 40px;
+      }
 
-/* menu items start */
-#menu{
-	height: 28px;
-	width: 100%;
-	overflow: hidden;
-	background: #2c1517;
-	text-align: center;
-}
+      #menu li {
+        height: 50px;
+        width: 12%;
+        margin: 0;
+        line-height: 50px;
+        vertical-align: top;
+        display: inline-block;
+      }
 
-span.menu, span.menu:hover{
-	height: 28px;
-	width: 109px;
-	border-left: 1px solid #fff;
-}
+      #menu .left {
+        position: relative;
+        left: 40px;
+      }
 
-span.menu{
-	letter-spacing: 1px;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 20px;
-	padding-top: 8px;
-	display: inline-block;
-	margin: 0; /*wat*/
-}
+      #menu .right {
+        position: relative;
+        left: -40px;
+      }
 
-span.menu:hover{
-	background: #7b4947;
-}
-/* mnfl = menu names' first letter */
-span.mnfl{
-	color: #be9090;
-}
-
-#endmenu{
-	border-right: 1px solid #fff;
-}
-/* menu items end */
-
-#content{
-	position: relative;
-	left: -329.5px;
-	width: 659px;
-	color: #515151;
-	height: auto;
-	letter-spacing: 1px;
-	margin: 0 0 0 50%;
-	font-size: 12px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	float: none;
-}
-
-div.links{
-	width: 659px;
-	height: 290px;
-}
-
-img.thumbs{
-	margin-bottom: 6px;
-	padding: 7px;
-	border: 1px solid #aaa;
-}
-
-h3.conhed{
-	margin-bottom: 0;
-	font-size: 22px;
-	font-weight: normal;
-}
-
-div.columns{
-	padding: 7px;
-	width: 150px;
-	border: 0px;
-	height: auto;
-	float: left;
-}
-
-p.quote{
-	font-size: 10px;
-	text-transform: uppercase;
-}
-
-.contact{
-	width: 329px;
-	height: 191px;
-	float: left;
-}
-
-.colhed{
-	text-align: right;
-	font-weight: normal;
-	border-bottom: 0px solid;
-}
-
-hr{
-	margin-bottom: 7px;
-	border: 0;
-	height: 1px;
-	width: 90%;
-	background-color: #ddd;
-}
-
-#footer{
-	padding-bottom: 45px;
-	overflow: hidden;
-	display: block;
-	background: #ffecd3;
-	border-top: 1px solid #ffddb1;
-	letter-spacing: 2px;
-	font-size: 9px;
-	color: #fff;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	bottom: 0px;
-}
-
-#copyright{
-	margin: 70px 0 30px 50%;
-	position: relative;
-	left: -285.5px;
-	width: 571px;
-	height: 127px;
-}
+  #view {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    /*bottom: 0;*/
+    margin: 400px 0 0 0;
+    padding: 30px 20%;
+    background-color: #FFF;
+  }
