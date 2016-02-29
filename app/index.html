@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>allenduy</title>
+  <base href="/">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body ng-app="allenduymeApp">
+
+  <!--[if lte IE 8]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <div class="container">
+    <nav class="space-top-lg">
+      <div class="col-xs-2 menu-block text-center"><a href="/">ALLENDUY</a></div>
+      <div class="col-xs-2 menu-block text-center"><a href="/blog">blog</a></div>
+      <div class="col-xs-2 menu-block text-center"><a href="/portfolio">portfolio</a></div>
+      <div class="col-xs-2 menu-block text-center"><a href="/about">about</a></div>
+      <div class="col-xs-2 menu-block text-center"><a href="/resum&eacute;">resum&eacute;</a></div>
+      <div class="col-xs-2 menu-block text-center"><a href="/contact">contact</a></div>
+    </nav>
+
+    <div id="content" class="container-fluid">
+      <div ng-view=""></div>
+    </div>
+
+    <footer class="space-bot-lg">
+      <div class="container-fluid text-center">&copy;</div>
+    </footer>
+  </div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+      (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+      r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+    }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/ngFitText/dist/ng-FitText.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/about.js"></script>
+  <script src="scripts/controllers/blog.js"></script>
+  <script src="scripts/controllers/portfolio.js"></script>
+  <script src="scripts/controllers/resume.js"></script>
+  <script src="scripts/controllers/contact.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>
